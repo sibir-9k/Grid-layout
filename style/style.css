@@ -7,14 +7,14 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-size: 100%;
 }
 
 .container {
   max-width: 1232px;
   margin: 0 auto;
-
+  align-items: stretch;
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 80px auto auto 80px;
@@ -262,8 +262,8 @@ header {
   line-height: 20px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
-  color: #B6BCBF;
-  position: absolute;  
+  color: #b6bcbf;
+  position: absolute;
   bottom: 24px;
   left: 24px;
 }
@@ -290,7 +290,7 @@ footer {
 
 /*//////////////////////////// @media //////////////////////////////*/
 
-@media (max-width: 1230px){
+@media (max-width: 1230px) {
   .catalog {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -301,8 +301,10 @@ footer {
 
 @media (max-width: 770px) {
   .card {
-    width: 224px;
-    height: 420px;
+    max-width: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: stretch;
   }
 
   .text h2 {
@@ -322,7 +324,7 @@ footer {
 
   .promo-title h1 {
     font-size: 1.875em;
-    line-height: 2.125em;
+    line-height:  34px;;
   }
 
   .container {
@@ -359,6 +361,10 @@ footer {
     display: grid;
   }
 
+  .nav-menu{ 
+    display: none;
+  }
+
   .catalog {
     display: grid;
     grid-template-columns: 1fr;
@@ -366,11 +372,12 @@ footer {
     gap: 10px;
   }
   .catalog-card {
-    grid-row-gap: 24px;
-    grid-column-gap: 16px;
+    padding: 24px 16px;
   }
   .card {
+    max-width: none;
+    display: grid;
     grid-template-columns: 1fr;
+    justify-items: stretch;
   }
 }
-
