@@ -130,7 +130,7 @@ header {
   grid-column: 1/-1;
   grid-row: auto;
   padding: 62px 0px 62px;
-  background-color: #f5f6f7;
+  background: #f5f6f7;
   background-size: cover;
 }
 
@@ -155,20 +155,6 @@ header {
 .picture img {
   max-width: 100%;
   border-radius: 16px 16px 0px 0px;
-}
-
-.tag {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1em;
-  line-height: 1.25em;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  color: #b6bcbf;
-  position: absolute;
-  bottom: 2px;
-  left: 24px;
 }
 
 .active-btn-flex {
@@ -259,14 +245,27 @@ header {
   line-height: 30px;
   color: #1a1b22;
 }
-
-.text p {
+.text-info {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
   line-height: 1.375em;
   color: #1a1b22;
+}
+
+.tag {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #B6BCBF;
+  position: absolute;  
+  bottom: 24px;
+  left: 24px;
 }
 
 /*//////////////////////////// Footer ////////////////////////////*/
@@ -291,8 +290,16 @@ footer {
 
 /*//////////////////////////// @media //////////////////////////////*/
 
+@media (max-width: 1230px){
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .card {
     width: 224px;
     height: 420px;
@@ -336,9 +343,8 @@ footer {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   .container {
-    /*  Redefine the grid into a single column layout. */
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"
