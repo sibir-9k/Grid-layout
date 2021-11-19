@@ -261,7 +261,7 @@ footer {
 }
 /*//////////////////////////// @media //////////////////////////////*/
 @media (max-width: 1230px) {
-.catalog {
+    .catalog {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -269,44 +269,44 @@ footer {
     }
 }
 @media (max-width: 770px) {
-.card {
+    .card {
         max-width: none;
         display: grid;
         grid-template-columns: 1fr;
         justify-items: stretch;
     }
-.text h2 {
+    .text h2 {
         font-size: 1.375em;
         line-height: 1.5em;
     }
-.text-info {
+    .text-info {
         width: 192px;
         height: 88px;
         font-size: 1em;
         line-height: 1.375em;
         overflow: hidden;
     }
-.promo-title h1 {
+    .promo-title h1 {
         font-size: 1.875em;
         line-height: 34px;
     }
-.container {
+    .container {
         max-width: 688px;
         grid-template-columns: 224px 224px 224px;
         grid-template-rows: 66px auto auto 66px;
     }
-.key-word {
+    .key-word {
         width: 88px;
         height: 40px;
         font-size: 0.875em;
         line-height: 1.5em;
     }
-.delete-card {
+    .delete-card {
         display: none;
     }
 }
 @media (max-width: 340px) {
-.container {
+    .container {
         grid-template-columns: 1fr;
         grid-template-areas:
             "header"
@@ -319,19 +319,19 @@ footer {
         padding: 0px 16px;
         display: grid;
     }
-.menu-burger {
+    .menu-burger {
         display: block;
     }
-.nav-menu {
+    .nav-menu {
         display: none;
     }
-.catalog {
+    .catalog {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "card";
         gap: 10px;
     }
-.catalog-card {
+    .catalog-card {
         padding: 24px 16px;
     }
     .card {
@@ -340,15 +340,15 @@ footer {
         grid-template-columns: 1fr;
         justify-items: stretch;
     }
-.footer-nav-list {
+    .footer-nav-list {
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 13px;
     }
-.nav-title {
+    .nav-title {
         margin: 8px;
     }
-.footer-nav-menu {
+    .footer-nav-menu {
         display: grid;
         align-items: flex-start;
         flex-grow: 1;
@@ -357,11 +357,11 @@ footer {
         grid-column: 1/4;
         grid-row: 1/2;
     }
-.footer-navigation {
+    .footer-navigation {
         grid-template-columns: 1fr auto;
         display: grid;
     }
-.copyright {
+    .copyright {
         display: grid;
         grid-column: 1/4;
         grid-row: 3/4;
