@@ -1,85 +1,79 @@
     /*///////////////////////// for all elements /////////////////////////////*/
     @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
-    * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     }
-    body {
+body {
     font-size: 100%;
     }
-    .container {
+.container {
     max-width: 1232px;
     margin: 0 auto;
     align-items: stretch;
     display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 80px auto auto 80px;
-    /* grid-template-areas:
-        "header header header"
-        "promo-block promo-block promo-block"
-        "catalog-card catalog-card catalog-card"
-        "catalog-card catalog-card ."
-        "footer footer footer"; */
     }
     /*///////////////////////// Header //////////////////////// */
-    header {
+header {
     grid-column: 1/4;
     grid-row: 1/2;
     }
     /*////////////////////////// Menu //////////////////////////////*/
-    .navigation {
+.navigation {
     grid-template-columns: 1fr auto;
     display: grid;
     border-bottom: 1px solid #c4c4c4;
     padding: 30px 0px 26px;
     }
-    .menu-burger {
+.menu-burger {
     display: none;
     }
-    .nav-menu {
+.nav-menu {
     display: flex;
     }
-    .nav-list {
+.nav-list {
     display: flex;
     padding: 0;
     margin: 0;
     align-items: center;
     }
-    .nav-list:last-child {
+.nav-list:last-child {
     border-bottom: 1px solid black;
     }
-    .nav-title {
+.nav-title {
     display: inline;
     margin-right: 34px;
     list-style-type: none;
     }
-    .btn {
+.btn {
     width: 112px;
     border: 1px solid #1a1b22;
     box-sizing: border-box;
     border-radius: 100px;
     padding: 12px 37px 12px 19px;
     }
-    .btn-entry {
+.btn-entry {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 12px 0px 12px 19px;
     }
-    .btn-entry p {
+.btn-entry p {
     margin: 0;
     }
-    .btn-entry img {
+.btn-entry img {
     padding-right: 15px;
     }
     /*///////////////////////// Promo ///////////////////////////*/
-    .promo {
+.promo {
     grid-column: auto;
     grid-row: auto;
     padding: 40px 0px 56px;
     }
-    .promo-text {
+.promo-text {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -88,7 +82,7 @@
     color: rgba(26, 27, 34, 0.5);
     margin-bottom: 28px;
     }
-    .promo-title h1 {
+.promo-title h1 {
     grid-column: 1/2;
     font-family: Roboto Slab;
     font-style: normal;
@@ -98,7 +92,7 @@
     color: #1a1b22;
     margin-bottom: 30px;
     }
-    .promo-title p {
+.promo-title p {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -107,21 +101,21 @@
     color: #1a1b22;
     }
     /*///////////////////////// Cards ///////////////////////////////*/
-    .catalog-card {
+.catalog-card {
     grid-column: 1/-1;
     grid-row: auto;
     padding: 62px 0px 62px;
     background: #f5f6f7;
     background-size: cover;
     }
-    .catalog {
+.catalog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 16px;
     }
     /*///////////////////////// Image & Buttons Cards ///////////////////////*/
-    .card {
+.card {
     max-width: 400px;
     height: 576px;
     border-radius: 16px;
@@ -129,11 +123,11 @@
     padding: 0;
     border: 1px solid black;
     }
-    .picture img {
+.picture img {
     max-width: 100%;
     border-radius: 16px 16px 0px 0px;
     }
-    .active-btn-flex {
+.active-btn-flex {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -141,7 +135,7 @@
     top: 24px;
     right: 24px;
     }
-    .key-word {
+.key-word {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,10 +151,10 @@
     text-align: center;
     color: #000000;
     }
-    .active-btn-flex-inner {
+.active-btn-flex-inner {
     display: flex;
     }
-    .delete-card {
+.delete-card {
     background: #ffffff;
     border-radius: 10px;
     height: 40px;
@@ -176,10 +170,10 @@
     align-items: center;
     color: #000000;
     }
-    .delete-card-flag {
+.delete-card-flag {
     display: flex;
     }
-    .trash {
+.trash {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,7 +182,7 @@
     height: 40px;
     width: 40px;
     }
-    .card-date {
+.card-date {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
@@ -198,12 +192,12 @@
     margin-top: 12px;
     }
     /*/////////////////////////// Text Cards //////////////////////////*/
-    .text {
+.text {
     height: 304px;
     margin-left: 24px;
     margin-right: 24px;
     }
-    .text h2 {
+.text h2 {
     margin-bottom: 16px;
     font-family: Roboto Slab;
     font-style: normal;
@@ -212,7 +206,7 @@
     line-height: 30px;
     color: #1a1b22;
     }
-    .text-info {
+.text-info {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -220,7 +214,7 @@
     line-height: 1.375em;
     color: #1a1b22;
     }
-    .tag {
+.tag {
     font-family: Roboto Slab;
     font-style: normal;
     font-weight: bold;
@@ -238,13 +232,13 @@
     grid-column: 1/4;
     grid-row: auto;
     }
-    .footer-navigation {
+.footer-navigation {
     grid-template-columns: 1fr auto;
     display: grid;
     border-bottom: 1px solid #c4c4c4;
     padding: 30px 0px 26px;
     }
-    .copyright {
+.copyright {
     grid-column: 1/2;
     font-family: Roboto;
     font-style: normal;
@@ -253,15 +247,15 @@
     line-height: 1.375em;
     color: #b6bcbf;
     }
-    .footer-nav-list {
+.footer-nav-list {
     display: inline-block;
     }
-    .social-web {
+.social-web {
     display: inline;
     }
     /*//////////////////////////// @media //////////////////////////////*/
     @media (max-width: 1230px) {
-    .catalog {
+.catalog {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -269,44 +263,44 @@
     }
     }
     @media (max-width: 770px) {
-    .card {
+.card {
         max-width: none;
         display: grid;
         grid-template-columns: 1fr;
         justify-items: stretch;
     }
-    .text h2 {
+.text h2 {
         font-size: 1.375em;
         line-height: 1.5em;
     }
-    .text-info {
+.text-info {
         width: 192px;
         height: 88px;
         font-size: 1em;
         line-height: 1.375em;
         overflow: hidden;
     }
-    .promo-title h1 {
+.promo-title h1 {
         font-size: 1.875em;
         line-height: 34px;
     }
-    .container {
+.container {
         max-width: 688px;
         grid-template-columns: 224px 224px 224px;
         grid-template-rows: 66px auto auto 66px;
     }
-    .key-word {
+.key-word {
         width: 88px;
         height: 40px;
         font-size: 0.875em;
         line-height: 1.5em;
     }
-    .delete-card {
+.delete-card {
         display: none;
     }
     }
     @media (max-width: 340px) {
-    .container {
+.container {
         grid-template-columns: 1fr;
         grid-template-areas:
         "header"
@@ -319,36 +313,36 @@
         padding: 0px 16px;
         display: grid;
     }
-    .menu-burger {
+.menu-burger {
         display: block;
     }
-    .nav-menu {
+.nav-menu {
         display: none;
     }
-    .catalog {
+.catalog {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "card";
         gap: 10px;
     }
-    .catalog-card {
+.catalog-card {
         padding: 24px 16px;
     }
-    .card {
+.card {
         max-width: none;
         display: grid;
         grid-template-columns: 1fr;
         justify-items: stretch;
     }
-    .footer-nav-list {
+.footer-nav-list {
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 13px;
     }
-    .nav-title {
+.nav-title {
         margin: 8px;
     }
-    .footer-nav-menu {
+.footer-nav-menu {
         display: grid;
         align-items: flex-start;
         flex-grow: 1;
@@ -357,11 +351,11 @@
         grid-column: 1/4;
         grid-row: 1/2;
     }
-    .footer-navigation {
+.footer-navigation {
         grid-template-columns: 1fr auto;
         display: grid;
     }
-    .copyright {
+.copyright {
         display: grid;
         grid-column: 1/4;
         grid-row: 3/4;
