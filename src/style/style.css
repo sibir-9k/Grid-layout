@@ -18,12 +18,12 @@ body {
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 80px auto auto 80px;
-  grid-template-areas:
+  /* grid-template-areas:
     "header header header"
     "promo-block promo-block promo-block"
     "catalog-card catalog-card catalog-card"
     "catalog-card catalog-card ."
-    "footer footer footer";
+    "footer footer footer"; */
 }
 
 /*///////////////////////// Header //////////////////////// */
